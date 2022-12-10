@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 2</title>
+
+  <link rel="stylesheet" href="color.css">
+  <script type="text/javascript">
+    var c = ["lightblue", "pink", "orange", "lightgreen"];
+
+    function changeColor() {
+      setTimeout(function loop() {
+        document.bgColor = c.shift();
+        if (c.length) {
+          setTimeout(loop, 5000);
+        }
+      }, 5000);
+    }
+
+    function start() {
+      setInterval(changeColor(), 20000);
+    }
+  </script>
+  <script type="text/javascript">
+    alert("Hello Integralites");
+  </script>
+
+
+</head>
+
+<body onload="start()">
+  <h2 style="color: rgb(11, 11, 11);" class="abc"><u>Assignment 2</u></h2>
+  <p style="color:rgb(108, 148, 171) ;" class="ef">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
+    voluptatem
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem dolorem assumenda, illum est porro
+    pariatur impedit, quia qui quod architecto. Dignissimos nulla facilis explicabo exercitationem saepe molestiae velit
+    officia.
+    dicta, labore autem culpa,Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, veritatis debitis illum
+    expedita eligendi deserunt veniam, voluptate voluptas totam ullam ea porro vero. Ipsam porro sint qui obcaecati
+    voluptatem esse!
+    doloribus corporis debitis, sit nostrum incidunt ullam quas mollitia neque id voluptas architecto fugiat. Sint
+    rem distinctio <i style="color:black ;">background</i> commodi dolorem repellat <b style="color:black ;">aparna</b>
+    iure sequi fugiat sit, earum consectetur
+    atque esse
+    ratione ad non
+    deleniti reiciendis cum facere fugit, blanditiis quam, perspiciatis asperiores nemo! Ab doloremque maxime,
+    voluptates natus animi sint <u style="color:black ;">Computer Graphics and Multimedia Application</u> deserunt
+    aliquid, tempore amet nam recusandae
+    error!
+    Accusamus nulla, rem neque
+    aperiam inventore tenetur accusantium adipisci totam aliquid minima dolor voluptas ipsa, labore suscipit eaque
+    numquam non velit rerum molestias ipsam eligendi? Quos rerum veniam quo quam molestias.</p>
+
+  <h3 style="color:green ;"><b><u>THE FORM ELEMENT</u></b></h3>
+
+  <form action>
+
+
+
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+
+    <p style><b style="color:rgb(10, 11, 13) ;"><u>Select your favourite subject</u></b></p>
+
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="CHEMISTRY">
+    <label for="vehicle1">CHEMISTRY</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="PHYSICS">
+    <label for="vehicle2">PHYSICS</label><br>
+    <input type="checkbox" id="vehicle1" name="vehicle3" value="COMPUTERS">
+    <label for="vehicle3">COMPUTERS</label><br>
+
+    <p><b style="color:rgb(20, 21, 22) ;"><u>Select your favorite Web language:</u> </b></p>
+      <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="html">HTML</label><br>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">CSS</label><br>
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+      <label for="javascript">JavaScript</label>
+
+    <br>
+
+    <p><b style="color:rgb(17, 18, 18) ;"><u>Select your age:</u> </b></p>
+    <input type="radio" id="age1" name="age" value="30">
+    <label for="age1">0 - 30</label><br>
+    <input type="radio" id="age2" name="age" value="60">
+    <label for="age2">31 - 60</label><br>
+    <input type="radio" id="age3" name="age" value="100">
+    <label for="age3">61 - 100</label><br>
+
+    <p><b style="color:rgb(16, 18, 19) ;"><u>Select your favorite Movie:</u> </b></p>
+      <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="html">Transformers</label><br>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">Harry potter</label><br>
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+      <label for="javascript">Avengers</label>
+
+    <br>
+
+    <p><b style="color:rgb(15, 15, 16) ;"><u>Select your favorite Singer:</u> </b></p>
+      <input type="checkbox" id="html" name="fav_language" value="HTML">
+      <label for="html">Arijit singh</label><br>
+      <input type="checkbox" id="css" name="fav_language" value="CSS">
+      <label for="css">Armaan malik</label><br>
+      <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
+      <label for="javascript">Eminem</label>
+
+    <br><br>
+
+    <form action="/action_page.php" method="post">
+      <label for="password">Password</label>
+      <br>
+      <input type="text" name="fname" required>
+      <input type="submit">
+      <br><br>
+
+    </form>
+  </form>
+
+  <h2> Hello ^ v ^ </h2>
+  <p> Click the following button to see the bold effect. </p>
+  <p id="para"> </p>
+  <button onclick="fun()"> Click me </button>
+  <script>
+    function fun() {
+      var str = "Welcome to INTEGRAL UNIVERSITY ";
+      document.getElementById('para').innerHTML = str.bold();
+    } 
+  </script>
+  <p> Click the following button to see the italic effect. </p>
+  <p id="parry"> </p>
+  <button onclick="fnn()"> Click me </button>
+  <script>
+    function fnn() {
+      var str = "Welcome to BCA Department";
+      document.getElementById('parry').innerHTML = str.italics();
+    } 
+  </script>
+  <br>
+  <br>
+  <a href="registration.html">
+    <button>SUBMIT HERE</button>
+  </a>
+
+</body>
+
+</html>
